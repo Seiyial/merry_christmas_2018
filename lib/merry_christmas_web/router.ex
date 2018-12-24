@@ -16,7 +16,8 @@ defmodule MerryChristmasWeb.Router do
   scope "/", MerryChristmasWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/*route", PageController, :censor_gate
+    get "/", PageController, :begone
   end
 
   # Other scopes may use custom stacks.
