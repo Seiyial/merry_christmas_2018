@@ -15,7 +15,11 @@
 </div>
 
 <div class="mound">
-    <p style="text-align: center;">MERRY CHRISTMAS</p>
+    <p class="merry-christmas-text">
+        <span style="color: #00B32C">MERRY</span>
+        <span style="color: #FF0012">CHRISTMAS</span>,
+        <b><%= String.upcase(@name) %></b> !!
+    </p>
 </div>
 
 <div class="snowfall group-1">
