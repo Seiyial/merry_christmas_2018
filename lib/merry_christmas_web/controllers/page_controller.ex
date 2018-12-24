@@ -2,8 +2,8 @@ defmodule MerryChristmasWeb.PageController do
   use MerryChristmasWeb, :controller
   alias MerryChristmas.Messenger
 
-  def begone(conn, _params) do
-    redirect(conn, external: "https://seiyianworks.io")
+  def censor_gate(conn, %{"route" => []}) do
+    redirect conn, external: "https://seiyianworks.io"
   end
 
   def censor_gate(conn, %{"route" => [route]}) do
