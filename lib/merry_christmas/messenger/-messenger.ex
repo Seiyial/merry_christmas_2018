@@ -43,8 +43,10 @@ defmodule MerryChristmas.Messenger do
 			end
 	end
 
-	def set_unviewed(%MR{} = mr) do
-		mr
+	def set_unviewed(route) do
+		MR
+		|> where([mr], mr.route == ^route)
+		|> Repo.one!
 		|> MR.changeset(%{viewed: false})
 		|> Repo.update
 		|> case do
