@@ -1,6 +1,15 @@
 # MerryChristmas
 
-To start your Phoenix server:
+Merry Christmas Tool.
+Create your Merry Christmas recipients and they'll get to see a pretty snowing page that says merry christmas on any device.
+
+This page is accessible via a link. Each link will be different for every recipient, and resultantly the page shows something customised (their name). `Link` and `name` and be manually and differently set.
+
+For now recipients can only be created on manually on the console.
+
+### Setup
+
+1. Provide the credentials of database access at `config/prod.secret.exs`. Postgres 10 supported.
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
